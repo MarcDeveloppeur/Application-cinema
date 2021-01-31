@@ -1,0 +1,55 @@
+.boxContainer{
+    background-color: rgb(2,26,97);
+  box-shadow: 2px 2px 2px black;
+  max-width:250px;
+  height:auto;
+  margin:30px 20px;
+  min-height:370px;
+  border-radius: 10px;
+  position:relative;
+}
+.imageBox{
+  width:250px;
+  height:300px;
+  border-radius: 10px;
+}
+.movieTitle,.movieNote{
+  color:white;
+  font-family: sans-serif;
+}
+.about{
+  display:flex;
+  justify-content: space-between;
+  padding: 0 20px;
+}
+.movieNote{
+  background-color: rgb(2,16,58);
+  max-height: 20px;
+  min-width:10%;
+  height:20px;
+  padding:5px;
+  text-align: center;
+  font-size: 0.8rem;
+  margin-left: 20px;
+}
+.good{
+  color:green;
+}
+.enaugh{
+  color:orange;
+}
+.bad{
+  color:red;
+}
+.movieDescription{
+  background-color: rgba(255,255,255,0.5);
+  position:absolute;
+  right:0;
+  left:0;
+  bottom:0;
+  height:0;
+  transition: height 1s ease-in;
+}
+.boxContainer:hover .movieDescription{
+  height:80%;
+}
