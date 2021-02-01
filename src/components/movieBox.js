@@ -2,6 +2,7 @@ import React from 'react';
 import './componentsCss/movieBox.css';
 
 function MovieBox(props) {
+    const APIimage="https://image.tmdb.org/t/p/w1280";
   return (
     <div className="boxContainer">
           <img src={props.imageUrl} alt="image d'un film" className="imageBox"/>
@@ -14,7 +15,7 @@ function MovieBox(props) {
                </p>
           </div>
           <div className="movieDescription">
-                    <p>  {props.description}</p>
+                    <p className="description">  {props.description}</p>
           </div>
     </div>
   );

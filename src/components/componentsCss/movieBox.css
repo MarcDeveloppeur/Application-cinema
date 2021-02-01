@@ -1,6 +1,6 @@
 .boxContainer{
-    background-color: rgb(2,26,97);
-  box-shadow: 2px 2px 2px black;
+  background-color: rgb(2,26,97);
+  box-shadow: 3px 3px 3px white;
   max-width:250px;
   height:auto;
   margin:30px 20px;
@@ -48,8 +48,18 @@
   left:0;
   bottom:0;
   height:0;
+  border-radius: 10px;
   transition: height 1s ease-in;
 }
+.description{
+  padding: 10px 20px;
+  opacity:0;
+  transition: all 1s ease-in;
+  font-weight: bold;
+}
 .boxContainer:hover .movieDescription{
-  height:80%;
+  height:90%;
+}
+.boxContainer:hover .description{
+  opacity:1;
 }
